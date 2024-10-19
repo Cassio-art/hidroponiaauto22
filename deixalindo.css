@@ -1,0 +1,72 @@
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+h1, h2, h3 {
+    font-weight: 600;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.nav-link {
+    font-weight: 400;
+    transition: color 0.3s;
+}
+
+.nav-link:hover {
+    color: #f8f9fa;
+}
+
+.beneficio {
+    border: 2px solid #28a745; /* Borda verde para os benefícios */
+    border-radius: 8px;
+    padding: 15px;
+    margin: 10px 0;
+    background-color: #f8f9fa; /* Fundo claro para os benefícios */
+}
+
+.footer-bar {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+.img_agua {
+    max-width: 100%; /* Evita imagens maiores que o container */
+    width: 200px;    /* Aumentando a largura para 300px */
+    height: auto;    /* Preserva a proporção */
+    border: 2px solid black;
+    border-radius: 3px;
+  
+.tela-inicial {
+    max-width: 100%; /* Evita imagens maiores que o container */
+    width: 400px;    /* Largura fixa */
+    height: auto;    /* Preserva a proporção */
+    border: 2px solid black;
+    border-radius: 3px;
+}
+.video-fluid {
+    max-width: 100%;
+    height: auto;
+    border: 2px solid black;
+    border-radius: 10px;
+    display: block;
+    margin: 20px auto;
+}
+.cooler {
+    max-width: 100%; /* Evita imagens maiores que o container */
+    width: 300px;    /* Aumentando a largura para 300px */
+    height: auto;    /* Preserva a proporção */
+    border: 2px solid black;
+    border-radius: 3px;
+}
+.imagem-container {
+    display: flex;           /* Usa flexbox para colocar as imagens lado a lado */
+    justify-content: space-between; /* Espaçamento entre as imagens */
+}
+
+.imagem-container img {
+    max-width: 48%;         /* Cada imagem ocupa até 48% da largura do contêiner */
+    height: auto;           /* Preserva a proporção das imagens */
+    border: 2px solid black; /* Adiciona borda */
+    border-radius: 3px;     /* Bordas arredondadas */
+}

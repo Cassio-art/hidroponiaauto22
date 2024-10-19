@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hidroponia Automatizada</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet"> <!-- Nova fonte -->
+    <link rel="stylesheet" href="deixalindo.css">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+        h1, h2, h3 {
+            font-weight: 600;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        .navbar-brand { /* Estilo da marca na navbar */
+            font-family: 'Montserrat', sans-serif; /* Aplicando a nova fonte */
+            font-weight: 600; /* Peso da fonte */
+        }
+        .nav-link {
+            font-weight: 400;
+            transition: color 0.3s;
+        }
+        .nav-link:hover {
+            color: #f8f9fa;
+        }
+        .beneficio {
+            border: 2px solid #28a745; /* Borda verde para os benefícios */
+            border-radius: 8px;
+            padding: 15px;
+            margin: 10px 0;
+            background-color: #f8f9fa; /* Fundo claro para os benefícios */
+        }
+        .footer-bar {
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+        .img-agua {
+            max-width: 35%; /* Diminuindo a largura da imagem da água para 35% */
+            height: auto;    /* Preserva a proporção */
+            border: 2px solid black;
+            border-radius: 3px;
+            display: block;  /* Para centralizar a imagem */
+            margin: 0 auto;  /* Para centralizar a imagem horizontalmente */
+        }
+        .video-fluid {
+            max-width: 90%;   /* Ajuste para diminuir o tamanho do vídeo */
+            height: auto;
+            border: 2px solid black;
+            border-radius: 10px;
+            display: block;
+            margin: 20px auto;
+        }
+        .cooler {
+            max-width: 100%; /* Evita imagens maiores que o container */
+            width: 300px;    /* Largura fixa para a imagem do cooler */
+            height: auto;    /* Preserva a proporção */
+            border: 2px solid black;
+            border-radius: 3px;
+            display: block;  /* Para centralizar a imagem do cooler */
+            margin: 0 auto;  /* Para centralizar a imagem do cooler */
+        }
+        .imagem-container {
+            display: flex;                   /* Usa flexbox para colocar as imagens lado a lado */
+            justify-content: space-around;   /* Espaçamento igual entre as imagens */
+        }
+        .imagem-container img {
+            width: 45%;                     /* Cada imagem ocupa 45% da largura do contêiner */
+            height: auto;                   /* Preserva a proporção das imagens */
+            border: 2px solid black;        /* Adiciona borda */
+            border-radius: 3px;             /* Bordas arredondadas */
+        }
+        .img-planta { /* Classe para a imagem da planta */
+            max-width: 50%; /* Ajuste a largura máxima da imagem da planta */
+            height: auto; /* Preserva a proporção */
+            display: block; /* Para centralizar a imagem */
+            margin: 20px auto; /* Centraliza a imagem horizontalmente com margem */
+            border: 2px solid black; /* Adiciona borda */
+            border-radius: 3px; /* Bordas arredondadas */
+        }
+    </style>
+</head>
+<body>
+    <header class="bg-success text-white">
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <a class="navbar-brand" href="#">Hidroponia Automatizada</a>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" id="sobre-link" data-toggle="modal" data-target="#sobre-modal">Sobre</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" id="contato-link" data-toggle="modal" data-target="#contato-modal">Contato</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <div class="text-center mt-4">
+            <h1 class="display-4">Hidroponia Automatizada</h1>
+            <p class="text-title">"Transformando o cultivo com tecnologia inovadora"</p>
+        </div>
+    </header>
+
+    <main class="container mt-4">
+        <section class="mt-4">
+            <h2>Benefícios da Hidroponia</h2>
+            <div class="beneficio mb-4">
+                <h3>Uso Eficiente da Água</h3>
+                <p>Implementamos uma solução sustentável que aproveita a água da chuva captada pelo telhado do refeitório e a reutiliza no sistema hidropônico. Toda a água que cai sobre o telhado é direcionada por calhas para um reservatório localizado dentro de uma estufa. Ao chegar no reservatório, é feito um controle rigoroso do pH para garantir que a água esteja adequada para o cultivo hidropônico. Esse controle é essencial para assegurar que as plantas possam absorver os nutrientes de forma eficiente e se desenvolverem de maneira saudável.  
+
+                    Após o ajuste do pH, a água é utilizada diretamente na hidroponia, onde serve como meio para nutrir as plantas sem a necessidade de solo. Essa prática não apenas reduz a demanda por água potável, mas também promove um uso mais consciente dos recursos disponíveis. Além disso, ao reutilizar a água da chuva, diminuímos o impacto ambiental e contribuímos para a preservação dos recursos hídricos. 
+                    
+                    Com essa abordagem, integramos captação e reaproveitamento da água em um ciclo sustentável, unindo eficiência e responsabilidade ecológica. A solução reflete um compromisso com práticas mais conscientes e mostra como pequenos ajustes podem gerar grandes benefícios para o meio ambiente e a produção de alimentos..</p>
+                <img src="img_agua.jpeg" alt="Uso Eficiente da Água" class="img-fluid img-agua">
+            </div>
+
+            <div class="beneficio mb-4">
+                <h3>Maior Controle sobre Nutrientes</h3>
+                <p>Desenvolvemos também um aplicativo para computadores e notebooks que calcula, de forma precisa, a quantidade exata de nutrientes e água necessária para cada planta no sistema hidropônico. O software foi criado por meio de programação voltada para otimizar o processo de cultivo, oferecendo informações personalizadas com base nas características específicas de cada espécie plantada.  
+
+                    O aplicativo simplifica o trabalho do cultivador ao indicar a dose ideal de nutrientes e o volume de água para cada fase do desenvolvimento das plantas. Com isso, o sistema garante uma nutrição equilibrada, evitando tanto o desperdício de recursos quanto a aplicação inadequada de insumos. A interface foi projetada para ser intuitiva, facilitando o uso até mesmo para quem não possui experiência técnica em agricultura de precisão.  
+                    
+                    Essa ferramenta contribui para aumentar a eficiência do cultivo hidropônico e melhorar os resultados, ao mesmo tempo em que reduz o impacto ambiental. Ao integrar tecnologia e sustentabilidade, o aplicativo promove uma gestão mais consciente dos recursos e facilita o trabalho diário do produtor, tornando o sistema mais acessível e eficiente.</p>
+                <div class="imagem-container">
+                    <img src="tela-inicio1.jpeg" alt="Maior Controle sobre Nutrientes" class="img-fluid img-nutrientes">
+                    <img src="calculo.png" alt="Outra Imagem" class="img-fluid img-nutrientes"> <!-- Substitua 'calculo.png' pelo nome da sua segunda imagem -->
+                </div>
+            </div>
+
+            <div class="beneficio mb-4">
+                <h3>Cultivo em Espaços Pequenos</h3>
+                <p>A hidroponia é uma técnica versátil que pode ser implementada em pequena escala, tornando-se ideal para espaços reduzidos, como varandas de apartamentos, quintais pequenos e até terraços. Por não depender de solo, esse sistema permite cultivar hortaliças, temperos e flores em estruturas compactas, utilizando apenas água enriquecida com nutrientes. Isso possibilita que pessoas que vivem em áreas urbanas, sem acesso a grandes terrenos, possam produzir alimentos frescos e saudáveis diretamente em casa. 
+
+                    Uma das grandes vantagens da hidroponia é a facilidade de adaptação. Com tubos ou vasos adequados e um pequeno reservatório, é possível montar um sistema eficiente em um espaço mínimo. Além disso, como o consumo de água é controlado, a técnica se mostra altamente sustentável, reutilizando a água e evitando desperdícios. Isso é especialmente vantajoso em cenários urbanos, onde a preservação de recursos naturais é uma preocupação crescente. 
+                    
+                    Esse tipo de cultivo também promove maior independência alimentar e reduz a necessidade de comprar produtos que muitas vezes são cultivados com o uso intensivo de agrotóxicos. Com a ajuda do nosso aplicativo, o cultivador pode administrar facilmente a nutrição e a hidratação das plantas, mesmo em sistemas pequenos, garantindo um crescimento saudável e otimizado. 
+                    
+                    Além de ser uma solução prática e sustentável, a hidroponia em casa contribui para um estilo de vida mais consciente e proporciona o prazer de cultivar e consumir alimentos frescos. Assim, essa técnica se apresenta como uma excelente opção para quem busca produzir seus próprios alimentos de forma eficiente, mesmo em espaços limitados.</p>
+                <video controls class="video-fluid" preload="metadata">
+                    <source src="hidro_video.mp4" type="video/mp4">
+                    Seu navegador não suporta o vídeo. Atualize seu navegador ou tente em outro dispositivo.
+                </video>
+            </div>
+
+            <div class="beneficio mb-4">
+                <h3>Redução de Pesticidas</h3>
+                <p>A hidroponia é uma prática de cultivo que se destaca pela redução significativa da utilização de agrotóxicos e pesticidas, em comparação com a agricultura tradicional que utiliza solo. Isso se deve principalmente ao fato de que, na hidroponia, as plantas crescem em um ambiente controlado e livre de terra. A ausência de solo dificulta o desenvolvimento de pragas e doenças comuns que afetam as culturas, uma vez que muitos insetos e patógenos dependem da presença de terra para se proliferar.
+
+                    Além disso, o cultivo hidropônico permite um monitoramento mais rigoroso das condições de crescimento, como pH, temperatura e umidade. Essa capacidade de controle reduz a necessidade de intervenções químicas, pois os cultivadores podem identificar e tratar problemas de forma mais precisa e proativa. Em ambientes hidropônicos, é possível adotar práticas de manejo integrado de pragas (MIP), que priorizam soluções biológicas e mecânicas antes de recorrer a produtos químicos. 
+                    
+                    Outro ponto importante é que a hidroponia facilita a rotação de culturas e a diversificação das plantas cultivadas, o que também ajuda a prevenir infestações. Com diferentes tipos de plantas sendo cultivadas em ciclos, cria-se um ambiente menos propício para o estabelecimento de pragas e doenças. Isso se traduz em uma produção mais saudável e sustentável, com menos necessidade de substâncias químicas.
+                    
+                    A redução do uso de agrotóxicos e pesticidas não só beneficia a saúde dos consumidores, ao proporcionar alimentos mais limpos e saudáveis, mas também contribui para a preservação do meio ambiente. Com menos produtos químicos sendo liberados no solo e nas águas, a hidroponia ajuda a mitigar a contaminação ambiental e os impactos negativos da agricultura convencional.
+                    
+                    Portanto, a hidroponia não apenas oferece uma solução prática e eficiente para o cultivo de alimentos, mas também se destaca como uma alternativa mais segura e sustentável, promovendo a saúde das pessoas e do planeta.</p>
+                <img src="plantas.jpeg" alt="Redução de Pesticidas" class="img-fluid img-planta"> <!-- Adiciona a classe img-planta para centralizar e reduzir o tamanho -->
+            </div>
+
+            <div class="beneficio mb-4">
+                <h3>Menor Dependência do Clima</h3>
+                <p>Através da nossa tecnologia de automação, a hidroponia se torna uma solução viável independentemente das condições climáticas externas. Com sistemas de controle de refrigeramento e iluminação integrados na estufa, conseguimos manter um ambiente ideal para o crescimento das plantas, mesmo em climas instáveis. Isso significa que os cultivadores não precisam se preocupar com as variações de temperatura e iluminação que podem afetar o desenvolvimento das culturas, garantindo assim uma produção contínua e saudável.
+
+                    O controle de temperatura é realizado por meio de um sistema automatizado que ativa a refrigeração sempre que a temperatura ultrapassa os 24 graus Celsius. Essa funcionalidade é essencial, pois temperaturas elevadas podem estressar as plantas e comprometer sua saúde e produtividade. Com a automatização, a bomba de refrigeração pode ser programada para ligar e desligar em intervalos regulares, garantindo que o ambiente dentro da estufa permaneça sempre em condições ótimas para o cultivo.
+                    
+                    Além disso, a alimentação das plantas é feita pela diluição precisa dos nutrientes na água. A programação do sistema permite que a bomba de nutrientes seja acionada automaticamente, garantindo que as plantas recebam a quantidade ideal de nutrientes em intervalos específicos. Isso não apenas maximiza a eficiência no uso dos insumos, mas também assegura que as plantas tenham acesso contínuo aos elementos essenciais para seu crescimento.
+                    
+                    Através dessa automação, conseguimos otimizar o uso dos recursos, reduzir o trabalho manual e aumentar a produtividade, tudo isso enquanto garantimos que as plantas tenham as melhores condições para se desenvolverem. Essa tecnologia não só melhora a eficiência do sistema hidropônico, mas também permite que os cultivadores tenham maior controle sobre o ambiente de cultivo, resultando em colheitas mais saudáveis e abundantes. Portanto, a nossa solução de automação se destaca como uma inovação que transforma a hidroponia em uma prática acessível e altamente eficiente, independentemente das condições climáticas externas.</p>
+                <img src="cooler.jpeg" alt="Menor Dependência do Clima" class="img-fluid cooler">
+            </div>
+
+            <div class="beneficio mb-4">
+                <h3>Geração de Energia</h3>
+                <p>A energia utilizada em nosso projeto de hidroponia é gerada de forma sustentável por meio de placas solares. Essa fonte de energia renovável não apenas minimiza o impacto ambiental do cultivo, mas também reduz os custos operacionais a longo prazo. As placas solares capturam a luz solar e a convertem em eletricidade, que é utilizada para alimentar todos os componentes do sistema, desde as bombas de água até os controles de iluminação e refrigeração.
+
+                    Para garantir uma distribuição eficiente da energia, implementamos um controlador que gerencia a carga elétrica para cada componente. Esse controlador assegura que cada parte do sistema receba a quantidade adequada de energia, evitando sobrecargas e garantindo o funcionamento otimizado de todos os equipamentos. Essa tecnologia é essencial para manter a estabilidade do sistema e a eficiência na utilização da energia gerada.
+                    
+                    Além disso, contamos com uma bateria que armazena a energia gerada pelas placas solares. Essa bateria permite que o sistema funcione mesmo em períodos de baixa luminosidade, como durante a noite ou em dias nublados. Assim, os cultivadores têm a segurança de que todos os componentes continuarão a operar de maneira eficiente, independentemente das condições climáticas.
+                    
+                    A combinação de energia solar com um sistema de controle de carga e armazenamento em bateria representa uma abordagem inovadora e sustentável para a hidroponia. Essa solução não apenas promove a autonomia energética do projeto, mas também contribui para a viabilidade a longo prazo, permitindo que cultivadores em qualquer local mantenham um sistema produtivo e sustentável, mesmo em regiões com limitações de infraestrutura elétrica.</p>
+                <div class="imagem-container">
+                    <img src="ener_1.jpeg" alt="Imagem 1" class="img-fluid">
+                    <img src="ener_2.jpeg" alt="Imagem 2" class="img-fluid">
+                </div>
+            </div>
+        </section>
+
+        <section class="mt-4 mb-5">
+            <h2>Aplicações e Tecnologias</h2>
+            <p>No primeiro semestre de 2024, alunos da Escola Estadual Visconde de Cerro Alegre desenvolveram um projeto inovador focado em sustentabilidade, visando automatizar um sistema de cultivo hidropônico para a produção saudável de alimentos para os refeitórios escolares. Motivados pela preocupação com o uso excessivo de agrotóxicos e pela busca de alternativas mais saudáveis, a equipe, composta por três alunos, decidiu explorar a hidroponia como uma solução viável e, além disso, criar um sistema automatizado que pudesse ser facilmente replicado em ambientes escolares.
+
+                A maquete construída pela equipe ilustra uma estufa automatizada que incorpora diversas tecnologias sustentáveis. A principal inovação foi o uso de componentes eletrônicos simples, programados em C++, para controlar uma bomba de água com base em dados de sensores. Um sensor DHT11 foi implementado para monitorar a temperatura e a umidade do ambiente, e esses dados são exibidos em um display LCD, permitindo um controle eficiente do microclima, essencial para o cultivo de verduras livres de agrotóxicos.
+                
+                Um dos aspectos mais interessantes do projeto é o reaproveitamento da água de irrigação. A água da chuva é captada por calhas e armazenada em um reservatório, permitindo sua reutilização e promovendo a economia de recursos naturais. Essa prática é combinada com a automação do sistema, que não só otimiza a irrigação, mas também minimiza o desperdício.
+                
+                Além disso, a energia utilizada no sistema é gerada por placas solares, aumentando ainda mais a sustentabilidade do projeto. Essa energia é armazenada em uma bateria de 12V/10Ah, gerida por um controlador que distribui a carga de forma eficiente para cada componente do sistema. Para garantir o funcionamento ideal, um controlador de carga, acionado por células fotovoltaicas, ajusta a energia gerada com base nas necessidades do sistema. Dessa forma, garantimos que todos os componentes, incluindo o sistema de refrigeração e os controles de iluminação, operem de maneira eficiente, independentemente das condições climáticas externas.
+                
+                Outra inovação foi a implementação de LEDs RGB na estufa, onde diferentes cores de luz foram exploradas para otimizar o crescimento das plantas, eliminando a necessidade de aditivos químicos. A iluminação é controlada de maneira automatizada, permitindo a adaptação às necessidades específicas das culturas em diferentes estágios de desenvolvimento.
+                
+                Para simplificar o gerenciamento do cultivo, a equipe desenvolveu um software que controla a quantidade de nutrientes diluídos na água, de acordo com a litragem e o tipo de planta cultivada. O programa permite o cadastro de plantas e nutrientes, calculando automaticamente a quantidade necessária para um crescimento saudável, minimizando erros e aumentando a eficiência no cultivo.
+                
+                O projeto visa, assim, promover a adoção de tecnologias que aumentem a eficiência agrícola nas escolas, contribuindo para uma alimentação saudável e sustentável. Com a automação do sistema hidropônico, o uso de energia solar e a reutilização da água, os alunos não apenas criaram uma solução prática para o cultivo de alimentos, mas também inspiraram outras instituições a adotarem práticas semelhantes, promovendo uma educação ambiental integrada e consciente. Essa iniciativa representa uma grande oportunidade para ensinar os alunos sobre sustentabilidade e responsabilidade ambiental, preparando-os para um futuro mais consciente e sustentável.</p>
+        </section>
+
+        <button onclick="topFunction()" id="myBtn" title="Voltar ao topo">🔝</button>
+    </main>
+
+    <footer class="footer-bar bg-success text-white text-center py-3">
+        <p>&copy; 2024 Hidroponia. Todos os direitos reservados.</p>
+    </footer>
+
+    <!-- Modais -->
+    <div class="modal fade" id="sobre-modal" tabindex="-1" role="dialog">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header bg-success text-white">
+                    <h5 class="modal-title">Quem somos:</h5>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <p>Bem-vindo ao nosso grupo de Hidroponia! Somos Cassio, Luis e Eduardo, e estamos empolgados em apresentar nosso projeto para a amostra científica. Desde o começo do ano, temos trabalhado arduamente no desenvolvimento desse projeto, buscando soluções inovadoras e sustentáveis para a produção de alimentos. Através da hidroponia, queremos não apenas cultivar plantas de maneira eficiente, mas também demonstrar a importância da sustentabilidade e do uso consciente dos recursos naturais. Esperamos que nosso trabalho inspire outras pessoas a adotarem práticas agrícolas mais saudáveis e responsáveis!</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="contato-modal" tabindex="-1" role="dialog">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header bg-success text-white">
+                    <h5 class="modal-title">Contato:</h5>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <p>Entre em contato conosco pelo e-mail e rede social: hidroautomatizada@gmail.com ou hidro_automatizada no Instagram
+
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        // Volta ao topo
+        var mybutton = document.getElementById("myBtn");
+        window.onscroll = function() {
+            scrollFunction();
+        };
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
+        }
+        function topFunction() {
+            document.body.scrollTop = 0; // Para Safari
+            document.documentElement.scrollTop = 0; // Para Chrome, Firefox, IE e Opera
+        }
+    </script>
+</body>
+</html>
